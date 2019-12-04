@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<style>
+    #edit {
+        background-color: blue;
+        color:white;
+        border-style:solid;
+        border-width:thick;
+        border-color:black;
+    }
+    .edit1 {
+        color:green;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    .edit2 {
+        background-color:yellow;
+        color:red;
+    }
+</style>
+<table class="table table-bordered">
+    <tr id="edit">
+        <td><h1>Head1</h1></td>
+        <td><h2>Head2</h2></td>
+        <td><h3>Head3</h3></td>
+        <td><h4>Head4</h4></td>
+    </tr>
+    <tr class="edit2">
+        <td><h1>Head1</h1></td>
+        <td><h2>Head2</h2></td>
+        <td><h3>Head3</h3></td>
+        <td rowspan="2"><h4>Head4</h4></td>
+    </tr>
+    <tr class="edit2">
+        <td><h5>Head5</h5></td>
+        <td class="edit1"><h6 class="bold">Head6</h6></td>
+        <td><h7>Head7</h7></td>
+    </tr>
+    <tr class="edit2">
+        <td><h8>Head8</h8></td>
+        <td><h9>Head9</h9></td>
+        <td><h10>Head10</h10></td>
+        <td><h11>Head11</h11></td>
+    </tr>
+    <tr class="edit2">
+        <td><h12>Head12</h12></td>
+        <td class="edit1" colspan="2"><h13 class="bold">Head13</h13></td>
+        <td><h14>Head14</h14></td>
+    </tr>
+</table>
